@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Page</title>
+  <link rel="stylesheet" href="upldcss.css">
+</head>
+<body>
+  <div class="container">
+    <h1>COURSE PAGE</h1>
+
+    <!-- Form to upload documents -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <h2>UPLOAD DOCUMENT</h2>
+
+      <!-- Dropdown for selecting courses -->
+      <label for="courseID">Select Course:</label>
+      <select id="courseID" name="courseID" required>
+        <option value="">Select a Course</option>
+        <option value="Course1">Course 1</option>
+        <option value="Course2">Course 2</option>
+        <option value="Course3">Course 3</option>
+        <!-- Add more options for other courses -->
+      </select><br>
+
+      <!-- Dropdown for selecting faculties -->
+      <label for="facultyID">Select Faculty:</label>
+      <select id="facultyID" name="facultyID" required>
+        <option value="">Select a Faculty</option>
+        <option value="Faculty1">Faculty 1</option>
+        <option value="Faculty2">Faculty 2</option>
+        <option value="Faculty3">Faculty 3</option>
+        <!-- Add more options for other faculties -->
+      </select><br>
+
+      <label for="file">Choose a file:</label>
+      <input type="file" id="file" name="file" required><br>
+
+      <button type="submit">Upload Document</button>
+    </form>
+
+    <!-- Display courses and faculties -->
+    <!-- You can add JavaScript to dynamically populate these lists if needed -->
+  </div>
+
+  <script src="scriptuplld.js"></script>
+</body>
+</html>
